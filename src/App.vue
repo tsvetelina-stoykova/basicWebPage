@@ -35,37 +35,44 @@
       </div> -->
     
 
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">   
-       <span class="icon">
-          <i class="fa fa-download"></i>
-        </span>     
-    </div>
-
-    <div id="navbarBasicExample" class="navbar-menu">
-
-      <div class="navbar-start">
-        <a class="navbar-item">
-          Home
-        </a>
-        <a class="navbar-item">
-          About
-        </a>
-        <a class="navbar-item">
-          Work
-        </a>
+  <nav class="navbar has-shadow"  role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-left">   
+        <p class="navbar-item vue">VUE.JS</p>    
       </div>
 
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <div class="buttons">
-            <a class="button is-primary">
-              <strong>Log in</strong>
-            </a>
+      <span class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+
+      <div class="navbar-menu navbar-end">
+
+        <div class="navbar-end">
+
+          <a class="navbar-item">
+            Home
+          </a>
+          <a class="navbar-item">
+            Page 1
+          </a>
+          <a class="navbar-item">
+            Page 2
+          </a>
+        
+
+        
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-primary is-outlined">
+                <strong>Log in</strong>
+              </a>
+            </div>
           </div>
         </div>
+      
       </div>
-    
     </div>
   </nav>
 
@@ -88,11 +95,29 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
-  text-align: center
-  color: #2c3e50
-  margin-top: 60px
 
   nav
-    background: #e1e1e1  
+    background-color: #383838
+    
+    .vue
+      color: #00d1b2
+      font-weight: bold
+      padding-top: 15px
+
+      a:hover
+        color: #ccc
+
+    .navbar-left a
+      color: #c1c1c1
+      font-weight: bold
+      
+
+    .navbar-end .navbar-item
+      color: #c1c1c1  
+     
+
+   
+      
+
 
 </style>
