@@ -4,6 +4,7 @@ import Home from '@/components/Home'
 // import Page1 from '@/components/Page1'
 import ComputedProperty from '@/components/ComputedProperty'
 import Methods from '@/components/Methods'
+import ImageGallery from '@/components/ImageGallery'
 
 Vue.use(Router)
 
@@ -23,6 +24,11 @@ export default new Router({
       path: '/methods',
       name: 'Methods',
       component: Methods
+    },
+    {
+      path: '/image-gallery',
+      name: 'ImageGallery',
+      component: ImageGallery
     }
   ]
 })
